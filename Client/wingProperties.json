@@ -10,16 +10,6 @@
 		"library":{
 			"children":[
 				{
-					"isFolder":false,
-					"key":"bgImage",
-					"name":"bgImage"
-				},
-				{
-					"isFolder":false,
-					"key":"egretIcon",
-					"name":"egretIcon"
-				},
-				{
 					"children":[
 						{
 							"isFolder":false,

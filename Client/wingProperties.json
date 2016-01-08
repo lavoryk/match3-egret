@@ -18,6 +18,58 @@
 					"isFolder":false,
 					"key":"egretIcon",
 					"name":"egretIcon"
+				},
+				{
+					"children":[
+						{
+							"isFolder":false,
+							"key":"Cell00",
+							"name":"Cell00"
+						},
+						{
+							"isFolder":false,
+							"key":"Item00",
+							"name":"Item00"
+						},
+						{
+							"isFolder":false,
+							"key":"Item01",
+							"name":"Item01"
+						},
+						{
+							"isFolder":false,
+							"key":"Item02",
+							"name":"Item02"
+						},
+						{
+							"isFolder":false,
+							"key":"Item03",
+							"name":"Item03"
+						},
+						{
+							"isFolder":false,
+							"key":"Item04",
+							"name":"Item04"
+						},
+						{
+							"isFolder":false,
+							"key":"Item05",
+							"name":"Item05"
+						},
+						{
+							"isFolder":false,
+							"key":"Item06",
+							"name":"Item06"
+						}
+					],
+					"isFolder":false,
+					"key":"GamePlay_json",
+					"name":"GamePlay_json"
+				},
+				{
+					"isFolder":false,
+					"key":"Background001",
+					"name":"Background001"
 				}
 			]
 		}

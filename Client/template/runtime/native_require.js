@@ -10,6 +10,17 @@ var game_file_list = [
 	"libs/modules/res/res.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
+	"bin-debug/game/Field.js",
+	"bin-debug/game/HexGameConfig.js",
+	"bin-debug/game/Type.js",
+	"bin-debug/game/cell/Cell.js",
+	"bin-debug/game/filedstate/Fill.js",
+	"bin-debug/game/filedstate/IFieldState.js",
+	"bin-debug/level/ILevelData.js",
+	"bin-debug/level/mockup/Level001.js",
+	"bin-debug/manager/GameObject.js",
+	"bin-debug/manager/Resource.js",
+	"bin-debug/util/ItemPos.js",
 	//----auto game_file_list end----
 ];
 
@@ -40,8 +51,8 @@ egret_native.egretStart = function () {
 		entryClassName: "Main",
 		frameRate: 30,
 		scaleMode: "showAll",
-		contentWidth: 480,
-		contentHeight: 800,
+		contentWidth: 800,
+		contentHeight: 640,
 		showPaintRect: false,
 		showFPS: false,
 		fpsStyles: "x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9",

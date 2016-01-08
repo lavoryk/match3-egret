@@ -38,6 +38,17 @@
     <!--game_files_start-->
 	<script egret="game" src="bin-debug/LoadingUI.js"></script>
 	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/game/Field.js"></script>
+	<script egret="game" src="bin-debug/game/HexGameConfig.js"></script>
+	<script egret="game" src="bin-debug/game/Type.js"></script>
+	<script egret="game" src="bin-debug/game/cell/Cell.js"></script>
+	<script egret="game" src="bin-debug/game/filedstate/Fill.js"></script>
+	<script egret="game" src="bin-debug/game/filedstate/IFieldState.js"></script>
+	<script egret="game" src="bin-debug/level/ILevelData.js"></script>
+	<script egret="game" src="bin-debug/level/mockup/Level001.js"></script>
+	<script egret="game" src="bin-debug/manager/GameObject.js"></script>
+	<script egret="game" src="bin-debug/manager/Resource.js"></script>
+	<script egret="game" src="bin-debug/util/ItemPos.js"></script>
 	<!--game_files_end-->
 </head>
 <body>
@@ -47,8 +58,8 @@
          data-orientation="auto"
          data-scale-mode="showAll"
          data-frame-rate="30"
-         data-content-width="480"
-         data-content-height="800"
+         data-content-width="800"
+         data-content-height="640"
          data-show-paint-rect="false"
          data-multi-fingered="2"
          data-show-fps="false" data-show-log="false"

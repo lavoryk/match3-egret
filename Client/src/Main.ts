@@ -76,7 +76,8 @@ class Main extends egret.DisplayObjectContainer {
             RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
             RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
             RES.removeEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
-            this.createGameScene();
+            // this.createGameScene();
+            this.createMatch3Scene();
         }
     }
 
@@ -110,8 +111,24 @@ class Main extends egret.DisplayObjectContainer {
         }
     }
 
-    private textfield:egret.TextField;
+    private field: game.Field;
+    
+    private createMatch3Scene():void 
+    {
+        var sky: egret.Bitmap = this.createBitmapByName("Background001");
+        this.addChild(sky);
+        var stageW: number = this.stage.stageWidth;
+        var stageH: number = this.stage.stageHeight;
+        sky.width = stageW;
+        sky.height = stageH;
+        
+        this.field = new game.Field();        
+        this.field.fieldDisplayObject = this;
+        this.field.state = new game.filedstate.Fill();
+    }
 
+    private textfield: egret.TextField;
+    
     /**
      * 创建游戏场景
      * Create a game scene

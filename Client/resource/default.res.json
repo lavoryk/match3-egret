@@ -1,25 +1,30 @@
 {
-	"resources": [
+	"groups":[
 		{
-			"name": "bgImage",
-			"type": "image",
-			"url": "assets/bg.jpg"
+			"keys":"Background001",
+			"name":"preload"
 		},
 		{
-			"name": "egretIcon",
-			"type": "image",
-			"url": "assets/egret_icon.png"
-		},
-		{
-			"name": "description",
-			"type": "json",
-			"url": "config/description.json"
+			"keys":"GamePlay_json",
+			"name":"gameplay"
 		}
 	],
-	"groups": [
+	"resources":[
 		{
-			"name": "preload",
-			"keys": "bgImage,egretIcon"
+			"name":"description",
+			"type":"json",
+			"url":"config/description.json"
+		},
+		{
+			"name":"GamePlay_json",
+			"subkeys":"Cell00,Item00,Item01,Item02,Item03,Item04,Item05,Item06",
+			"type":"sheet",
+			"url":"assets/GamePlay/GamePlay.json"
+		},
+		{
+			"name":"Background001",
+			"type":"image",
+			"url":"assets/GamePlay/BackGround/Background001.jpg"
 		}
 	]
 }

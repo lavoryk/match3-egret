@@ -7,7 +7,7 @@ namespace game
     */
     import ItemPos = util.ItemPos;
     export class HexGameConfig 
-	{
+    {
     	private static _instance:HexGameConfig = null;
     	
         private itemSize:number = 74.0;
@@ -15,19 +15,19 @@ namespace game
         private stepCol:number;
         private scaleFactor:number = 1.0;       
     	
-		public constructor() 
-		{
+        public constructor() 
+        {
             this.recalc();    		
-		}
+        }
 		
-		public static get instance():HexGameConfig
-		{
+        public static get instance():HexGameConfig
+        {
 		    if (HexGameConfig._instance == null)
             {
                 HexGameConfig._instance = new HexGameConfig();
             }
             return HexGameConfig._instance;
-		}
+        }
 		
         private recalc(): void
         {            
@@ -56,5 +56,5 @@ namespace game
         {
             return this.stepCol;
         }
-	}
+    }
 }
